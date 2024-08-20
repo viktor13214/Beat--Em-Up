@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823b6672fe93737468cb77db189f8959, type: 3}
+  m_Name: TestBot
+  m_EditorClassIdentifier: 
+  scriptableDataBot: {fileID: 11400000, guid: e8690098e04b226468469c2249d56e28, type: 2}
+  _view: {fileID: 6918611402801117497, guid: 5f5aec575e974454cb130627dea9011a, type: 3}
+  botList: 0
