@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 49a6cb2b5b911284e8b6e1185f378150, type: 3}
   m_Name: Fist
-  m_EditorClassIdentifier: Assembly-CSharp::WeaponScriptable
-  Weapon: {fileID: 11400000, guid: 836256e2bead4fa418009820a5277d26, type: 2}
+  m_EditorClassIdentifier: 
+  Weapon: {fileID: 11400000, guid: 9e828b608752b3b42a5ad0aeea9a9ede, type: 2}
   _view: {fileID: 1859465491138268770, guid: 4ce8e9534ca4f5e45a4129bdc18925dc, type: 3}
   weaponList: 0

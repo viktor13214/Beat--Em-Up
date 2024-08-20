@@ -16,9 +16,9 @@ public class EntryPoint : MonoBehaviour
 
     [SerializeField] private LogicSpawnBot _logicSpawnBot;
 
-    [SerializeField] private Pool _poolObject;
+    [SerializeField] private Pool _pool;
 
-
+    [SerializeField]private WeaponList list;
     private Transform _playerTransform;
     
     private PlayerUI _playerUI;
@@ -33,10 +33,11 @@ public class EntryPoint : MonoBehaviour
 
     void Awake()
     {
+        _pool.Init();
         _playerUI = Instantiate(_playerUIPrefab,_playerUIPrefab.transform.position,_playerUIPrefab.transform.rotation);
         _playerUI.gameObject.SetActive(true);
         
-        TastControllerWeapon weapon = _weaponFabric.SpawnWeapon(_point,_point.rotation,WeaponList.Fist,ref _poolObject);
+        TastControllerWeapon weapon = _weaponFabric.SpawnWeapon(_point,_point.rotation,list,ref _pool);
         _input = new InputMobile(_playerUI.joystick,_playerUI.buttonAttack);
 
         GameObject player = _playerSpawn.InitPlayer(ref _input,ref weapon,ref _playerUI.customSlider);
@@ -55,7 +56,7 @@ public class EntryPoint : MonoBehaviour
 
     void BotInit()
     {
-        _logicSpawnBot.Init(_playerTransform.transform,ref _poolObject);
+        _logicSpawnBot.Init(_playerTransform.transform,ref _pool);
         _logicSpawnBot.Spawn(5);
 
         _playerUI.dialogSystem.endDialog -= BotInit;

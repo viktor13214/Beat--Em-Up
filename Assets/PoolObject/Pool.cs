@@ -15,7 +15,7 @@ public class Pool : MonoBehaviour
 
        private List<PoolObject> _pool;
        
-       private void Awake()
+       public void Init()
        {
           CreatePool();
        }

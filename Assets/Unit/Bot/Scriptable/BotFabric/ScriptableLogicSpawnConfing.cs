@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(menuName = "Bot/ConfingBotSpawn")]
+[CreateAssetMenu(menuName = "Bot/ScriptableLogicSpawnConfing")]
 public class ScriptableLogicSpawnConfing : ScriptableObject
 {
     public List<float> time; //время через которое будут спавнится боты

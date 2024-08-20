@@ -44,9 +44,9 @@ public class Joystick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler // �
         Vector2 dir = -startPosition + (inputAction.InputAny.ScreenPosition.ReadValue<Vector2>());
         direct = Vector3.Normalize(dir);
 
-        if(Vector2.Distance(_rectTransform.position,(Vector2)startPosition + direct * 4500 * Time.deltaTime) > 25) // магические числа )
+        if(Vector2.Distance(_rectTransform.position,(Vector2)startPosition + direct * 3000 * Time.deltaTime) > 25) // магические числа )
         {
-            _rectTransform.position = (Vector2)startPosition + direct * 4500 * Time.deltaTime;
+            _rectTransform.position = (Vector2)startPosition + direct * 3000 * Time.deltaTime;
         }
     }
     public Vector2 GetDirect()

@@ -10,9 +10,12 @@ public class WeaponFabric : MonoBehaviour
     {
             WeaponScriptable weaponType = weaponFabric.weaponScriptables.Where(x => x.weaponList.ToString() == 
                                                                               weaponList.ToString()).First();
+
+            if(weaponType._view == null) return null;
+            
             _poolObject = poolObject;
 
-            PoolObject weapon =  _poolObject.GetFreeElement(weaponType._view.GetComponent<PoolObject>(),point.position,rotation,null);
+            PoolObject weapon =  _poolObject.GetFreeElement(weaponType._view.GetComponent<PoolObject>(),point.position,rotation);
            
             TastViewWeapon _view = weapon.GetComponent<TastViewWeapon>();
 

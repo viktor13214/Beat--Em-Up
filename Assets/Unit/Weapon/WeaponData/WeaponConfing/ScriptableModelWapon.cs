@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "TastModelWapon", menuName = "TastModelWapon", order = 0)]
+[CreateAssetMenu(menuName = "TastModelWapon/ScriptableModelWapon")]
 public class ScriptableModelWapon : ScriptableObject // некий конфинг
 {
     public LayerMask triggerLayerMask;

@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7ca4de26e168b0c43a5596baae2cfec7, type: 3}
   m_Name: Fist
-  m_EditorClassIdentifier: Assembly-CSharp::ScriptableModelWapon
+  m_EditorClassIdentifier: 
   triggerLayerMask:
     serializedVersion: 2
     m_Bits: 768
   animatonLayer: 0
   Delay: 0.6
   countCombo: 3
-  Damage: 5
+  Damage: 10

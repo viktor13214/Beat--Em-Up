@@ -1,6 +1,6 @@
 
 using UnityEngine;
-[CreateAssetMenu(menuName = "Bot/Bot")]
+[CreateAssetMenu(menuName = "Bot/ScriptableBot")]
 public class ScriptableBot : ScriptableObject // это тип бота
 {
    public ScriptableDataBot scriptableDataBot;

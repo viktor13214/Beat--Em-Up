@@ -4,12 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-[Flags]
-public  enum Lang // извините что прям тут создал,я уже серьезно так устал )
-{
-    ru = 0,
-    en = 1
-}
+
 public class DialogSystem : MonoBehaviour
 {
     [SerializeField] private Lang _lang;
